@@ -1,4 +1,12 @@
-/* Global Classes */
 :root {
-    --dark-theme-color: #0E1B2B;
-}
+    --dark-bg-color: #0E1B2B;
+    --dark-text-color: #ffffff;
+    --light-bg-color: #ffffff;
+    --light-text-color: #333333;
+  }
+  
+  body {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+  }
+  
