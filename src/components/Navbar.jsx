@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='Navbar bg-dark-theme justify-center items-center flex  py-6'>
+    <nav className='Navbar bg-dark-theme justify-center items-center flex  py-4'>
       <div className="content flex items-center justify-between  w-full px-4">
         <div className='logdiv items-center justify-center'>
           <img src={Logo} alt="Company Logo" className="logo-img w-24 h-auto" />
