@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         "dark-theme": "#0E1B2B",
       },
+      fontFamily: {
+        josefin: ["Josefin Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],

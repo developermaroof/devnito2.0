@@ -13,19 +13,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='Navbar bg-dark-theme flex justify-center items-center py-6'>
-      <div className="content flex items-center justify-between w-full px-4">
-        <div className='logdiv'>
+    <nav className='Navbar bg-dark-theme justify-center items-center flex  py-6'>
+      <div className="content flex items-center justify-between  w-full px-4">
+        <div className='logdiv items-center justify-center'>
           <img src={Logo} alt="Company Logo" className="logo-img w-24 h-auto" />
         </div>
-        <div className='modesdiv flex items-center justify-center gap-1 ml-10'>
-          <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-3 h-auto" />
+        <div className='justify-center gap-10 items-center flex '>
+        <div className='modesdiv flex items-center justify-center gap-1'>
+          <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-2 h-2" />
           <span className='text-white text-xs'>Modes</span>
-          <img src={DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-auto" />
+          <img src={DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-2" />
         </div>
-        <div className='relative'>
+        <div className='justify-center items-center'>
           <button onClick={toggleMenu} className='Hamburger'>
-            <img src={HamburgerOpen} alt="Menu" className="hamburger-icon w-6 h-auto" />
+            <img src={HamburgerOpen} alt="Menu" className="hamburger-icon w-5 mt-1 h-5 text-center justify-center items-center" />
           </button>
           {menuOpen && (
             <div className='absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2'>
@@ -35,7 +36,7 @@ const Navbar = () => {
               <a href="#projects" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</a>
               <a href="#services" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</a>
             </div>
-          )}
+          )}</div>
         </div>
       </div>
     </nav>
