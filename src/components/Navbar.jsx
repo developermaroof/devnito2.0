@@ -29,14 +29,20 @@ const Navbar = () => {
             <img src={HamburgerOpen} alt="Menu" className="hamburger-icon w-5 mt-1 h-5 text-center justify-center items-center" />
           </button>
           {menuOpen && (
-            <div className='absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2'>
-              <a href="#home" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Home</a>
-              <a href="#about" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>About</a>
-              <a href="#contact" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Contact</a>
-              <a href="#projects" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</a>
-              <a href="#services" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</a>
+            <div className='overlay-container'>
+              <div className='overlay'></div>
+              <div className='menu'>
+                <div className='absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50'>
+                  <a href="#home" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Home</a>
+                  <a href="#about" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>About</a>
+                  <a href="#contact" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Contact</a>
+                  <a href="#projects" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</a>
+                  <a href="#services" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</a>
+                </div>
+              </div>
             </div>
-          )}</div>
+          )}
+        </div>
         </div>
       </div>
     </nav>
