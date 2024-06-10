@@ -7,6 +7,7 @@ const Home = () => {
         <Navbar/>
         <Banner />
         <Services />
+        <div className='my-10'></div>
         <WhyChoose />
         <About />
         <Transform />
