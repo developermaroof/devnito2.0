@@ -7,6 +7,8 @@ module.exports = {
         "dark-theme": "#0E1B2B",
         "light-gray": "#d6d6d6",
         "darker-theme": "#0A1420",
+        "lighter-theme": "#101F31",
+        textgray: "#7B7A7A",
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],
