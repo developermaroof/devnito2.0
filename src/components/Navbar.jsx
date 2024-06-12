@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className='Navbar bg-darker-theme justify-center items-center flex py-4 sticky top-0'>
       <div className="content flex items-center justify-between w-full px-4">
         <div className='logdiv items-center justify-center'>
-          <img src={Logo} alt="Company Logo" className="logo-img w-24 h-auto" />
+          <img src={Logo} alt="Company Logo" className="logo-img bg-darker-theme w-24 h-auto" />
         </div>
         <div className='justify-center gap-10 items-center flex '>
           <div className='modesdiv flex items-center justify-center gap-1'>
