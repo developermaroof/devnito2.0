@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <div className='p-6'>
       <div className='font-josefin flex flex-col gap-1'>
-        <h1 className='text-lg font-bold'>Transform Your</h1>
-        <h1 className='text-lg font-bold'>Business with</h1>
-        <h1 className='text-lg font-bold mb-4'>DevNito</h1>
+        <h1 className='text-lg font-bold sm:text-2xl md:text-3xl'>Transform Your</h1>
+        <h1 className='text-lg font-bold sm:text-2xl md:text-3xl'>Business with</h1>
+        <h1 className='text-lg font-bold mb-4 sm:text-2xl md:text-3xl'>DevNito</h1>
         <div className='line mb-4'></div>
-        <p className="text-xs text-light-gray">Your Partner for Digital Solutions</p>
+        <p className="text-xs text-light-gray sm:text-sm md:text-lg">Your Partner for Digital Solutions</p>
       </div>
       <div className='flex py-6 justify-center gap-4'>
         <img 
