@@ -9,6 +9,8 @@ module.exports = {
         "darker-theme": "#0A1420",
         "lighter-theme": "#101F31",
         textgray: "#7B7A7A",
+        "light-theme-bg": "#ffffff", // Add light theme background color
+        "light-theme-text": "#000000", // Add light theme text color
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],

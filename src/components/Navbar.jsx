@@ -35,18 +35,18 @@ const Navbar = () => {
           <img 
             src={Logo} 
             alt="Company Logo" 
-            className={`logo-img w-24 h-auto ${isScrolled ? 'filter brightness-75' : ''} transition-filter duration-300`} 
+            className={`logo-img sm:w-32 md:w-36 w-24 h-auto ${isScrolled ? 'filter brightness-75' : ''} transition-filter duration-300`} 
           />
         </div>
         <div className='justify-center gap-10 items-center flex'>
           <div className='modesdiv flex items-center justify-center gap-1'>
-            <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-2 h-2" />
-            <span className='text-white text-xs'>Modes</span>
-            <img src={DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-2" />
+            <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4" />
+            <span className='text-white text-xs sm:text-sm md:text-md'>Modes</span>
+            <img src={DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4" />
           </div>
           <div className='justify-center items-center'>
             <button onClick={toggleMenu} className='Hamburger'>
-              <img src={HamburgerOpen} alt="Menu" className="hamburger-icon w-5 mt-1 h-5 text-center justify-center items-center" />
+              <img src={HamburgerOpen} alt="Menu" className="hamburger-icon w-5 sm:w-7 sm:h-7 md:w-9 md:h-9 mt-1 h-5 text-center justify-center items-center" />
             </button>
             {menuOpen && (
               <div className='overlay-container'>
