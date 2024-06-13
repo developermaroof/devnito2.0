@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/navbar.css';
 import Logo from '../assets/logo.png';
 import ModeBlack from '../assets/ModeBlack.png';
@@ -7,18 +7,38 @@ import HamburgerOpen from '../assets/HamburgerOpen.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className='Navbar bg-darker-theme z-50  justify-center items-center flex py-4 sticky top-0'>
+    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
       <div className="content flex items-center justify-between w-full px-4">
-        <div className='logdiv items-center justify-center'>
-          <img src={Logo} alt="Company Logo" className="logo-img bg-darker-theme w-24 h-auto" />
+        <div className={`logdiv items-center justify-center ${isScrolled ? 'bg-darker-theme' : ''} transition-colors duration-300`}>
+          <img 
+            src={Logo} 
+            alt="Company Logo" 
+            className={`logo-img w-24 h-auto ${isScrolled ? 'filter brightness-75' : ''} transition-filter duration-300`} 
+          />
         </div>
-        <div className='justify-center gap-10 items-center flex '>
+        <div className='justify-center gap-10 items-center flex'>
           <div className='modesdiv flex items-center justify-center gap-1'>
             <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-2 h-2" />
             <span className='text-white text-xs'>Modes</span>
