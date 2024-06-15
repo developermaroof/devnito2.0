@@ -1,9 +1,13 @@
 import React from 'react'
+import { Footer, Navbar } from '../components'
 
-const Contact = () => {
+const About = () => {
   return (
-    <div>Contact</div>
+    <div className='bg-dark-theme'>
+      <Navbar/>
+      <Footer/>
+    </div>
   )
 }
 
-export default Contact
+export default About

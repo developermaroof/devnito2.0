@@ -1,9 +1,13 @@
 import React from 'react'
+import { Footer, Navbar } from '../components'
 
-const Services = () => {
+const About = () => {
   return (
-    <div>Services</div>
+    <div className='bg-dark-theme'>
+      <Navbar/>
+      <Footer/>
+    </div>
   )
 }
 
-export default Services
+export default About

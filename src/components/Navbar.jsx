@@ -4,6 +4,7 @@ import Logo from '../assets/logo.png';
 import ModeBlack from '../assets/ModeBlack.png';
 import DownArrow from '../assets/downarrow.png';
 import HamburgerOpen from '../assets/HamburgerOpen.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,11 +54,12 @@ const Navbar = () => {
                 <div className='overlay'></div>
                 <div className='menu'>
                   <div className='absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50'>
-                    <a href="#home" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Home</a>
-                    <a href="#about" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>About</a>
-                    <a href="#contact" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Contact</a>
-                    <a href="#projects" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</a>
-                    <a href="#services" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</a>
+        
+                    <Link to={"/"}><a href="#home" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Home</a></Link>
+                    <Link to={"/about"}><a href="#about" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>About</a></Link>
+                    <Link to={"/contact"}><a href="#contact" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Contact</a></Link>
+                    <Link to={"/projects"}><a href="#projects" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</a></Link>
+                    <Link to={"/services"}><a href="#services" className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</a></Link>
                   </div>
                 </div>
               </div>
