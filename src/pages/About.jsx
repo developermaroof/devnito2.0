@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutPage, Contact, Footer, Navbar } from '../components'
+import { AboutPage, Contact, Footer, Navbar, Team } from '../components'
 import Principles from '../components/Principles'
 
 const About = () => {
@@ -8,6 +8,7 @@ const About = () => {
       <Navbar/>
       <AboutPage/>
       <Principles/>
+      <Team/>
       <Contact/>
       <Footer/>
     </div>
