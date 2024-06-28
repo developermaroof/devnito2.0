@@ -9,3 +9,5 @@ export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";
 
 export { default as AboutPage } from "./AboutPage";
+export { default as ContactDevnito } from "./ContactDevnito";
+export { default as Address } from "./Address";
