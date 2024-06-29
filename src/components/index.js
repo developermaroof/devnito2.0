@@ -12,3 +12,4 @@ export { default as AboutPage } from "./AboutPage";
 export { default as ContactDevnito } from "./ContactDevnito";
 export { default as Address } from "./Address";
 export { default as Projects } from "./Project";
+export { default as ServicesPage } from "./ServicesPage";
