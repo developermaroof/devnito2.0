@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300 xl:max-w-screen-xl xl:mx-auto`}>
+    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300 2xl:max-w-screen-2xl 2xl:mx-auto`}>
       <div className="content flex items-center justify-between w-full px-4">
         <div className={`logdiv items-center justify-center ${isScrolled ? 'bg-darker-theme' : ''} transition-colors duration-300`}>
           <img 
