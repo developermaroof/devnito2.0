@@ -2,9 +2,9 @@ import React from 'react';
 
 const Principles = () => {
   return (
-    <div className='Principles font-josefin bg-darker-theme p-8 flex flex-col justify-center items-center font-bold text-lg gap-8 sm:px-20 '>
+    <div className='2xl:max-w-screen-2xl 2xl:mx-auto Principles font-josefin bg-darker-theme p-8 flex flex-col justify-center items-center font-bold text-lg gap-8 sm:px-20 '>
       <h1 className='sm:text-xl md:text-2xl'>Our Principles</h1>
-      <div className='PrincipleBoxes flex flex-col gap-10'>
+      <div className='PrincipleBoxes flex flex-col gap-10 lg:flex-row'>
         <div className="PrincipleBox bg-dark-theme p-6 gap-4 flex flex-col relative">
           <div className='bg-dark-theme absolute -top-3 left-1/2 transform -translate-x-1/2 border-darker-theme border-4 rounded-xl p-2'>
             
