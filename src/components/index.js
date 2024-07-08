@@ -13,3 +13,5 @@ export { default as ContactDevnito } from "./ContactDevnito";
 export { default as Address } from "./Address";
 export { default as Projects } from "./Project";
 export { default as ServicesPage } from "./ServicesPage";
+export { default as TeamDesktop } from "./TeamDesktop";
+export { default as Principles } from "./Principles";
