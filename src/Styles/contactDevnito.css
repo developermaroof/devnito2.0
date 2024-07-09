@@ -4,7 +4,7 @@
     background-position: center;
     position: relative;
   }
-  
+
   .ContactImg::before {
     content: '';
     position: absolute;
@@ -15,12 +15,30 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
   }
-  
+
+.ContactImgLg{
+  background-image: url('https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ContactImgLg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
   form{
     position: relative;
     z-index: 2;
   }
 
-  .contacts{
-    z-index: 2;
-  }
+.contacts{
+  z-index: 1;
+}
