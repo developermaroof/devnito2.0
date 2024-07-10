@@ -21,7 +21,7 @@ const Contact = () => {
           <div>
             <input className='bg-dark-theme  placeholder-textgray py-2 pl-4 font-josefin text-xs sm:text-sm sm:pr-10 md:text-lg md:pr-20  outline-none' placeholder='Subject' type='text' id='subject' name='subject' required />
           </div></div>
-          <div className=''>
+          <div>
             <textarea className='lg:w-full bg-dark-theme placeholder-textgray py-2 pl-4 font-josefin text-xs sm:text-sm sm:pr-10 md:text-lg md:pr-20  outline-none' placeholder='Message' id='message' name='message' required></textarea>
           </div>
           <div>

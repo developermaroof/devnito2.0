@@ -6,7 +6,6 @@ import Project3 from '../assets/Project3.png'
 const Project = () => {
   return (
     <div className='flex flex-col gap-20 font-josefin'>
-       
         <div className='p-10 sm:p-20 flex flex-col gap-4'> 
             <h1 className='font-bold sm:text-xl md:text-2xl'>Our Projects</h1>
             <h2 className='text-sm sm:text-lg md:text-xl'>
