@@ -17,3 +17,4 @@ export { default as TeamDesktop } from "./TeamDesktop";
 export { default as Principles } from "./Principles";
 export { default as ContactDevnitoLg } from "./ContactDevnitoLg";
 export { default as ProjectDesktop } from "./ProjectDesktop";
+export { default as ServicesDesktop } from "./ServicesDesktop";
