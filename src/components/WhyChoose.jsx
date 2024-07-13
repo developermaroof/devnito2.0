@@ -3,7 +3,8 @@ import WhyChooseWe from '../assets/WhyChoose.png'
 
 const WhyChoose = () => {
   return (
-    <div className='lg:gap-20 2xl:max-w-screen-2xl 2xl:mx-auto WhyChoose bg-darker-theme gap-5 py-16 p-6 justify-center flex flex-col text-center items-center lg:flex-row lg:px-10'>
+    <div className=' bg-darker-theme'>
+    <div className='lg:gap-20 2xl:max-w-screen-2xl 2xl:mx-auto WhyChoose gap-5 py-16 p-6 justify-center flex flex-col text-center items-center lg:flex-row lg:px-10'>
      <div className='lg:flex lg:flex-col lg:gap-4 '>
        <p className='text-xs font-thin font-josefin sm:text-sm lg:text-lg lg:text-left lg:font-normal lg:text-gray-300'>AND LET'S NOT FORGET
       </p>
@@ -13,7 +14,7 @@ const WhyChoose = () => {
     <div className='lg:w-full'>
       <img src={WhyChooseWe} alt="" />
     </div>
-    </div>
+    </div></div>
   )
 }
 

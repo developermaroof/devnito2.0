@@ -3,7 +3,8 @@ import ServiceImg from '../assets/Services.png'
 
 const Services = () => {
   return (
-    <div className='2xl:max-w-screen-2xl 2xl:mx-auto Services bg-darker-theme gap-5 lg:gap-20 py-16 p-6 justify-center flex flex-col text-center items-center lg:flex-row lg:px-10'>
+    <div className='bg-darker-theme'>
+    <div className='2xl:max-w-screen-2xl 2xl:mx-auto Services gap-5 lg:gap-20 py-16 p-6 justify-center flex flex-col text-center items-center lg:flex-row lg:px-10'>
   <div className='lg:order-last lg:flex lg:flex-col lg:gap-4'>
   <p className='text-xs font-thin font-josefin sm:text-sm lg:text-lg lg:text-left lg:font-normal lg:text-gray-300'>
     NOT TO MENTION
@@ -19,7 +20,7 @@ const Services = () => {
   <div className='lg:order-first lg:w-full '>
     <img src={ServiceImg} alt="" />
   </div>
-</div>
+</div></div>
   )
 }
 

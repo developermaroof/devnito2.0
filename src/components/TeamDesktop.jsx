@@ -7,7 +7,8 @@ import abdullah from '../assets/abdullah.png'
 const TeamDesktop = () => {
 
   return (
-    <div className='Team flex flex-col items-center text-center 2xl:max-w-screen-2xl 2xl:mx-auto'>
+    <div className='bg-darker-theme'>
+    <div className='Team  flex flex-col items-center text-center 2xl:max-w-screen-2xl 2xl:mx-auto'>
       <div className='bg-dark-theme py-8 px-10'>
         <img src={teamImg} alt="" />
       </div>
@@ -43,7 +44,7 @@ const TeamDesktop = () => {
         </div>
         </div>
         </div>
-    </div>
+    </div></div>
   )
 }
 
