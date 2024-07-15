@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [modesOpen, setModesOpen] = useState(false);
-  const [theme, setTheme] = useState('dark');
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -21,10 +21,7 @@ const Navbar = () => {
     setModesOpen(!modesOpen);
   };
 
-  const handleThemeChange = (newTheme) => {
-    setTheme(newTheme);
-    document.body.className = newTheme === 'dark' ? 'dark' : '';
-  };
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,8 +58,8 @@ const Navbar = () => {
             </div>
             {modesOpen && (
               <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
-                <button onClick={() => handleThemeChange('light')} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
-                <button onClick={() => handleThemeChange('dark')} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
+                <button  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
               </div>
             )}
           </div>
@@ -95,8 +92,8 @@ const Navbar = () => {
             </div>
             {modesOpen && (
               <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
-                <button onClick={() => handleThemeChange('light')} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
-                <button onClick={() => handleThemeChange('dark')} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
               </div>
             )}
           </div>
