@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [modesOpen, setModesOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -30,8 +30,11 @@ const Navbar = () => {
   }, [theme]);
 
   const handleThemeSwitch = (selectedTheme) => {
+    console.log("SELECTED TEHEME ", selectedTheme)
     setTheme(selectedTheme);
   };
+
+  console.log("THEME: ", theme)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +52,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
+    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-white dark:bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
+      
       <div className="content flex items-center justify-between w-full px-4 2xl:max-w-screen-2xl 2xl:mx-auto">
         <div className={`logdiv items-center justify-center ${isScrolled ? 'bg-darker-theme' : ''} transition-colors duration-300`}>
           <img 
@@ -63,13 +67,13 @@ const Navbar = () => {
           <div className='relative'>
             <div className='modesdiv flex items-center justify-center gap-1 cursor-pointer' onClick={toggleModes}>
               <img src={ModeBlack} alt="Mode Icon" className="mode-icon w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4" />
-              <span className='text-white text-xs sm:text-sm md:text-md'>Modes</span>
+              <span className=' dark:text-white text-xs sm:text-sm md:text-md'>Modes</span>
               <img src={modesOpen ? UpArrow : DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4" />
             </div>
             {modesOpen && (
-              <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
-                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
-                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
+              <div className='absolute right-0 mt-2 w-24  dark:bg-white shadow-lg rounded-lg py-2 z-50'>
+                <button className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
+                <button className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
               </div>
             )}
           </div>
@@ -82,11 +86,11 @@ const Navbar = () => {
                 <div className='overlay'></div>
                 <div className='menu'>
                   <div className='absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50'>
-                    <Link to={"/"} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Home</Link>
-                    <Link to={"/about"} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>About</Link>
-                    <Link to={"/contact"} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Contact</Link>
-                    <Link to={"/projects"} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Projects</Link>
-                    <Link to={"/services"} className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Services</Link>
+                    <Link to={"/"} className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200'>Home</Link>
+                    <Link to={"/about"} className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200'>About</Link>
+                    <Link to={"/contact"} className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200'>Contact</Link>
+                    <Link to={"/projects"} className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200'>Projects</Link>
+                    <Link to={"/services"} className='block px-4 py-2  dark:text-gray-800 hover:bg-gray-200'>Services</Link>
                   </div>
                 </div>
               </div>
