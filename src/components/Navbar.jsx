@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [modesOpen, setModesOpen] = useState(false);
-
+  const [theme, setTheme] = useState("light");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -21,7 +21,17 @@ const Navbar = () => {
     setModesOpen(!modesOpen);
   };
 
- 
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = (selectedTheme) => {
+    setTheme(selectedTheme);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,13 +49,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300 `}>
+    <nav className={`Navbar ${isScrolled ? 'bg-darker-theme' : 'bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
       <div className="content flex items-center justify-between w-full px-4 2xl:max-w-screen-2xl 2xl:mx-auto">
         <div className={`logdiv items-center justify-center ${isScrolled ? 'bg-darker-theme' : ''} transition-colors duration-300`}>
           <img 
             src={Logo} 
             alt="Company Logo" 
-            className={`logo-img sm:w-32 md:w-36 w-24 h-auto lg:w-56 lg:p-4 ${isScrolled ? 'filter brightness-75' : ''} transition-filter duration-300`} 
+            className={`logo-img sm:w-32 md:w-36 w-24 h-auto lg:w-56 lg:p-4 transition-filter duration-300`} 
           />
         </div>
           
@@ -58,8 +68,8 @@ const Navbar = () => {
             </div>
             {modesOpen && (
               <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
-                <button  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
-                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
               </div>
             )}
           </div>
@@ -92,8 +102,8 @@ const Navbar = () => {
             </div>
             {modesOpen && (
               <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
-                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Light</button>
-                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>Dark</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
+                <button className='block px-4 py-2 text-gray-800 hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
               </div>
             )}
           </div>
