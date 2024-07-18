@@ -54,8 +54,8 @@ const Contact = () => {
   return (
     <div className='2xl:max-w-screen-2xl 2xl:mx-auto Contact gap-10 py-12 px-6 flex flex-col justify-center items-center text-center'>
       <h1 className='font-bold text-xl font-josefin sm:text-2xl md:text-3xl'>Contact DevNito</h1>
-      <div className='bg-lighter-theme px-6 sm:px-12 md:px-20 pb-10 flex flex-col gap-5 md:gap-10 justify-center items-center text-center'>
-        <h1 className='bg-darker-theme text-xs sm:text-sm md:text-lg font-josefin px-5 py-4 rounded-b-2xl'>Get in Touch with Us</h1>
+      <div className='dark:bg-lighter-theme bg-white px-6 sm:px-12 md:px-20 pb-10 flex flex-col gap-5 md:gap-10 justify-center items-center text-center'>
+        <h1 className='dark:bg-darker-theme bg-light-theme-black text-xs sm:text-sm md:text-lg font-josefin px-5 py-4 rounded-b-2xl'>Get in Touch with Us</h1>
         <form    onSubmit={handleSubmit} className='gap-4 md:gap-6 flex flex-col'>
           <div className='gap-4 md:gap-6 flex flex-col lg:flex-row'>
           <div>
@@ -90,7 +90,7 @@ const Contact = () => {
                 rows="4"></textarea>
           </div>
           <div>
-            <button type='submit' className='bg-darker-theme px-6 py-2 text-xs sm:text-sm md:text-lg rounded-xl font-josefin'>Submit</button>
+            <button type='submit' className='dark:bg-darker-theme bg-light-theme-black px-6 py-2 text-xs sm:text-sm md:text-lg rounded-xl font-josefin'>Submit</button>
           </div>
         </form>
       </div>

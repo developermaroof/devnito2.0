@@ -3,7 +3,7 @@ import { Navbar, Banner, Services, WhyChoose, About, Transform, Contact, Footer 
 
 const Home = () => {
   return (
-    <div className='bg-dark-theme '>
+    <div className='dark:bg-dark-theme bg-light-theme  '>
         <Navbar/>
         <Banner />
         <Services />

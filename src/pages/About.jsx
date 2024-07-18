@@ -3,7 +3,7 @@ import { AboutPage, Principles, TeamDesktop, Contact, Footer, Navbar, Team } fro
 
 const About = () => {
   return (
-    <div className='bg-dark-theme'>
+    <div className='dark:bg-dark-theme bg-light-theme'>
       <Navbar />
       <AboutPage />
       <Principles />

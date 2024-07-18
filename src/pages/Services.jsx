@@ -3,7 +3,7 @@ import { Footer, Navbar, ServicesPage, ServicesDesktop } from '../components'
 
 const About = () => {
   return (
-    <div className='bg-dark-theme'>
+    <div className='dark:bg-dark-theme bg-light-theme'>
       <Navbar/>
       <div className='lg:hidden'>
       <ServicesPage/>

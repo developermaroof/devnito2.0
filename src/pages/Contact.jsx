@@ -3,7 +3,7 @@ import { Footer, Navbar, ContactDevnito, ContactDevnitoLg, Address } from '../co
 
 const About = () => {
   return (
-    <div className='bg-dark-theme'>
+    <div className='dark:bg-dark-theme bg-light-theme'>
       <Navbar/>
       <div className='lg:hidden'>
       <ContactDevnito/></div>
