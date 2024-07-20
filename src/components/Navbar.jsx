@@ -52,10 +52,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`Navbar ${isScrolled ? 'bg-light-theme dark:bg-darker-theme' : 'bg-light-theme dark:bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
+    <nav className={`Navbar ${isScrolled ? 'bg-light-theme-silver dark:bg-darker-theme' : 'bg-light-theme dark:bg-dark-theme'} z-50 justify-center items-center flex py-4 sticky top-0 transition-colors duration-300`}>
       
       <div className="content flex items-center justify-between w-full px-4 2xl:max-w-screen-2xl 2xl:mx-auto">
-        <div className={`logdiv flex gap-1 lg:gap-0 font-bold items-center justify-center ${isScrolled ? 'bg-light-theme dark:bg-darker-theme' : ''} transition-colors duration-300`}>
+        <div className={`logdiv flex gap-1 lg:gap-0 font-bold items-center justify-center ${isScrolled ? 'bg-light-theme-silver dark:bg-darker-theme' : ''} transition-colors duration-300`}>
           <img 
             src={Logo} 
             alt="Company Logo" 

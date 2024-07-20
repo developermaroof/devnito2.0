@@ -9,7 +9,7 @@ const Banner = () => {
         <h1 className='text-lg font-bold sm:text-2xl md:text-3xl lg:w-72 lg:text-4xl text-black dark:text-white'>Transform Your</h1>
         <h1 className='text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl text-black dark:text-white'>Business with</h1>
         <h1 className='text-lg font-bold mb-4 sm:text-2xl md:text-3xl lg:text-4xl text-black dark:text-white'>DevNito</h1>
-        <hr className='mb-4 w-32 sm:w-44 lg:w-56'/>
+        <hr className='mb-4 w-32 sm:w-44 lg:w-56 border-black dark:border-white'/>
         <p className="text-xs dark:text-white text-black sm:text-sm md:text-lg lg:text-xl">Your Partner for Digital Solutions</p>
       </div>
       <div className='flex py-6 justify-center gap-4 '>

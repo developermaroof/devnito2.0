@@ -11,6 +11,7 @@ module.exports = {
         textgray: "#7B7A7A",
         "light-theme": "#EFECEC",
         "light-theme-black": "#1E1E1E",
+        "light-theme-silver": "#DBD5D5",
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],
