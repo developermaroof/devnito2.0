@@ -74,10 +74,10 @@ const ContactDevnitoLg = () => {
         </div>
       </div>
       <div className='flex flex-col mt-10'>
-          <form onSubmit={handleSubmit} className='gap-10 ml-6 mt-4 p-4 flex w-full h-full justify-center items-center py-10 w-44 h-auto flex-col bg-dark-theme'>
+          <form onSubmit={handleSubmit} className='gap-10 ml-6 mt-4 p-4 flex w-full h-full justify-center items-center py-10 w-44 h-auto flex-col bg-light-theme-black dark:bg-dark-theme'>
             <h1 className='text-xl white font-bold'>LEAVE US MESSAGE</h1>
             <div>
-              <input className='bg-dark-theme placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'  placeholder='Your Name'
+              <input className='dark:bg-dark-theme bg-transparent placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'  placeholder='Your Name'
               type='text'
               name='name'
               value={formData.name}
@@ -85,14 +85,14 @@ const ContactDevnitoLg = () => {
               required/>
             </div>
             <div>
-              <input className='bg-dark-theme placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'   name="email"
+              <input className='dark:bg-dark-theme bg-transparent placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'   name="email"
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
               required/>
             </div>
             <div>
-              <textarea className='bg-dark-theme placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'    name="message"
+              <textarea className='dark:bg-dark-theme bg-transparent placeholder-textgray font-josefin text-lg outline-none border-b-2 border-gray-600 w-full'    name="message"
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
@@ -100,7 +100,7 @@ const ContactDevnitoLg = () => {
               rows="4"></textarea>
             </div>
             <div>
-              <button type='submit' className='bg-darker-theme py-2 px-12 text-lg font-josefin'>Send</button>
+              <button type='submit' className='dark:bg-darker-theme bg-light-theme-silver text-black dark:text-white py-2 px-12 text-lg font-josefin'>Send</button>
             </div>
           </form>
         
