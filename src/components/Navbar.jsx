@@ -34,8 +34,6 @@ const Navbar = () => {
     setTheme(selectedTheme);
   };
 
-  console.log("THEME: ", theme)
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -72,9 +70,9 @@ const Navbar = () => {
               <img src={modesOpen ? UpArrow : DownArrow} alt="Dropdown Arrow" className=" w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 dark:invert" />
             </div>
             {modesOpen && (
-              <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
+              <div className='absolute right-0 mt-2 w-18 bg-white shadow-lg rounded-lg z-50 flex flex-col justify-center items-center text-center'>
                 <button className='block px-4 py-2 text-black hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
-                <button className='block px-4 py-2 text-black hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
+                <button className='block px-4 py-2 text-black hover:bg-gray-200'onClick={() => handleThemeSwitch('dark')}>Dark</button>
               </div>
             )}
           </div>
@@ -106,7 +104,7 @@ const Navbar = () => {
               <img src={modesOpen ? UpArrow : DownArrow} alt="Dropdown Arrow" className="down-arrow w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 dark:invert" />
             </div>
             {modesOpen && (
-              <div className='absolute right-0 mt-2 w-24 bg-white shadow-lg rounded-lg py-2 z-50'>
+              <div className='absolute right-0 mt-2 bg-white shadow-lg rounded-lg z-50 flex flex-col justify-center items-center text-center'>
                 <button className='block px-4 py-2 text-black hover:bg-gray-200' onClick={() => handleThemeSwitch('light')}>Light</button>
                 <button className='block px-4 py-2 text-black hover:bg-gray-200' onClick={() => handleThemeSwitch('dark')}>Dark</button>
               </div>
