@@ -1,32 +1,30 @@
 import React from 'react';
-import bannerBg from "../assets/bannerBg.jpeg";
+import Banner1 from '../assets/1stbanner.png';
+import Banner2 from '../assets/2ndbanner.jpg';
 
 const Banner = () => {
   return (
-    <div className="2xl:max-w-screen-2xl 2xl:mx-auto">
-    {/* First Section */}
-      <div className="relative">
-      <div 
-          className="p-8 w-full h-66" 
-          style={{ 
-            backgroundImage: `url(${bannerBg})`, 
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        >
-          <div className="flex justify-center items-center">
-            <div className="bg-black bg-opacity-80 rounded-md w-64 h-full p-6 flex flex-col gap-2">
-              <p className='text-gray-300 font-josefin text-sm'>Welcome!</p>
-              <h1 className='font-josefin font-bold text-lg'>Trasform Your Business with <span className='text-blueText'>DevNito</span></h1>
-              <p className='text-gray-300 font-josefin text-xs'>Discover how DevNito can revolutionize your business through our exceptional IT export services</p>
-              <hr className='w-32 border-white'/>
-              <p className='text-gray-300 font-josefin text-xs'>Your Partner for Digital Solutions</p>
-              <button className='bg-white text-xs text-blueText py-2 rounded-2xl w-28 mt-2'>LEARN MORE</button>
-            </div>
-          </div>
-        </div>
+    <div className='p-6 lg:gap-10 lg:flex lg:justify-center lg:items-center 2xl:max-w-screen-2xl 2xl:mx-auto lg:p-10'>
+      <div className='font-josefin flex flex-col gap-1 lg:pr-10'>
+        <h1 className='text-lg font-bold sm:text-2xl md:text-3xl lg:w-72 lg:text-4xl text-black dark:text-white'>Transform Your</h1>
+        <h1 className='text-lg font-bold sm:text-2xl md:text-3xl lg:text-4xl text-black dark:text-white'>Business with</h1>
+        <h1 className='text-lg font-bold mb-4 sm:text-2xl md:text-3xl lg:text-4xl text-black dark:text-white'>DevNito</h1>
+        <hr className='mb-4 w-32 sm:w-44 lg:w-56 border-black dark:border-white'/>
+        <p className="text-xs dark:text-white text-black sm:text-sm md:text-lg lg:text-xl">Your Partner for Digital Solutions</p>
       </div>
-    {/* Second Section */}
+      <div className='flex py-6 justify-center gap-4 '>
+  <img 
+    src={Banner1} 
+    alt="Banner 1" 
+    className='w-1/2 h-auto object-cover rounded-lg'
+  />
+  <img 
+    src={Banner2} 
+    alt="Banner 2" 
+    className='w-1/2 h-auto object-cover rounded-lg'
+  />
+</div>
+
     </div>
   );
 }

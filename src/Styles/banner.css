@@ -1,39 +1,38 @@
 .bannerText .line{
-    width: 150px;
-    height: 1px;
-    background-color: #d6d6d6;
+  width: 150px;
+  height: 1px;
+  background-color: #d6d6d6;
 }
 
 .Banner {
-    position: relative;
-  }
-  
-  .bannerImages {
-    position: relative; /* This is necessary for absolute positioning inside it */
-  }
-  
-  .left-arrow {
-    position: absolute;
-    left: 69%; /* Adjust as needed */
-    top: 65%;
-    transform: translateY(-50%);
-    z-index: 10; /* Ensure it appears above the images */
-  }
-  
-  .right-arrow {
-    position: absolute;
-    right: 10px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10; /* Ensure it appears above the images */
-  }
-  .bannerImages {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
-  }
-  
-  .left-arrow, .right-arrow {
-    cursor: pointer;
-  }
-  
+  position: relative;
+}
+
+.bannerImages {
+  position: relative; /* This is necessary for absolute positioning inside it */
+}
+
+.left-arrow {
+  position: absolute;
+  left: 69%; /* Adjust as needed */
+  top: 65%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure it appears above the images */
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure it appears above the images */
+}
+.bannerImages {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.left-arrow, .right-arrow {
+  cursor: pointer;
+}
